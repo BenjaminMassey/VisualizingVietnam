@@ -10,13 +10,18 @@ public class NextScene : MonoBehaviour
     void Start()
     {
         int myIndex = SceneManager.GetActiveScene().buildIndex;
-        aso = SceneManager.LoadSceneAsync(myIndex + 1);
-        aso.allowSceneActivation = false;
+        if (myIndex < SceneManager.sceneCountInBuildSettings - 1)
+        {
+            aso = SceneManager.LoadSceneAsync(myIndex + 1);
+            aso.allowSceneActivation = false;
+        }
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.F) || OVRInput.GetDown(OVRInput.Button.One))
             aso.allowSceneActivation = true;
+        if (OVRInput.GetDown(OVRInput.Button.Two))
+            Application.Quit();
     }
 }
