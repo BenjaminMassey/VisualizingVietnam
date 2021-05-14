@@ -1,8 +1,11 @@
 fileFormatVersion: 2
-guid: 126e1a55d4018c44eb01760d1bfca098
+guid: 37b81aa68cfa141459582ea37265e93c
 ModelImporter:
   serializedVersion: 20200
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      74: 4194547506534252382
+    second: Soldier|Shader NodetreeAction.003
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -31,7 +34,7 @@ ModelImporter:
     extraExposedTransformPaths: []
     extraUserProperties: []
     clipAnimations: []
-    isReadable: 1
+    isReadable: 0
   meshes:
     lODScreenPercentages: []
     globalScale: 1

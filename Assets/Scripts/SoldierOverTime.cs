@@ -27,8 +27,10 @@ public class SoldierOverTime : MonoBehaviour
         rb.useGravity = false;
         BoxCollider bc = baseObject.GetComponent<BoxCollider>();
         bc.enabled = false;
-        MeshRenderer mr = baseObject.GetComponent<MeshRenderer>();
-        mr.enabled = false;
+        //MeshRenderer mr = baseObject.GetComponent<MeshRenderer>();
+        //mr.enabled = false;
+
+        baseObject.GetComponent<SkinnedMeshRenderer>().enabled = false;
 
         yield return new WaitForSeconds(wait_time);
 
@@ -45,7 +47,9 @@ public class SoldierOverTime : MonoBehaviour
             temp_go.transform.position = temp_v;
             temp_go.GetComponent<Rigidbody>().useGravity = true;
             temp_go.GetComponent<BoxCollider>().enabled = true;
-            temp_go.GetComponent<MeshRenderer>().enabled = true;
+            //temp_go.GetComponent<MeshRenderer>().enabled = true;
+            temp_go.GetComponent<SkinnedMeshRenderer>().enabled = true;
+            temp_go.transform.parent = gameObject.transform;
             yield return new WaitForSeconds(between_time);
         }
     }
