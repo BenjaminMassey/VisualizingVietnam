@@ -210,6 +210,7 @@ GameObject:
   m_Component:
   - component: {fileID: 392155334}
   - component: {fileID: 392155333}
+  - component: {fileID: 392155335}
   m_Layer: 0
   m_Name: Viet Civilians
   m_TagString: Untagged
@@ -224,7 +225,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 392155332}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2e1a2db4cc1c71c47a8918a4a2726396, type: 3}
   m_Name: 
@@ -248,6 +249,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &392155335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 392155332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a428a3f9b40c28848a09c68bf27d0ba8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseObject: {fileID: 428020831}
+  number: 52
+  bounds: {x: 0.5, y: 0, z: 0.25}
+  wait_time: 29
+  between_time: 0.5
 --- !u!1 &428020831 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 126e1a55d4018c44eb01760d1bfca098, type: 3}
@@ -904,7 +922,7 @@ Transform:
   m_GameObject: {fileID: 1125287882}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 1, z: 5}
+  m_LocalScale: {x: 50, y: 1, z: 50}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -1020,6 +1038,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1243593752}
   - component: {fileID: 1243593751}
+  - component: {fileID: 1243593753}
   m_Layer: 0
   m_Name: US Soldiers
   m_TagString: Untagged
@@ -1034,7 +1053,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1243593750}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2e1a2db4cc1c71c47a8918a4a2726396, type: 3}
   m_Name: 
@@ -1058,6 +1077,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1243593753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243593750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a428a3f9b40c28848a09c68bf27d0ba8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseObject: {fileID: 941505549}
+  number: 6
+  bounds: {x: 0.8, y: 0, z: 0.4}
+  wait_time: 3
+  between_time: 0.5
 --- !u!1001 &1274696660
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1352,6 +1388,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1356468253}
   - component: {fileID: 1356468254}
+  - component: {fileID: 1356468255}
   m_Layer: 0
   m_Name: Viet Soldiers
   m_TagString: Untagged
@@ -1381,7 +1418,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1356468252}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2e1a2db4cc1c71c47a8918a4a2726396, type: 3}
   m_Name: 
@@ -1390,6 +1427,23 @@ MonoBehaviour:
   number: 50
   bounds: {x: 0.5, y: 6, z: 0.25}
   wait_time: 3
+--- !u!114 &1356468255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356468252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a428a3f9b40c28848a09c68bf27d0ba8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseObject: {fileID: 1229715570}
+  number: 50
+  bounds: {x: 0.5, y: 0, z: 0.25}
+  wait_time: 3
+  between_time: 0.5
 --- !u!1 &1418936508
 GameObject:
   m_ObjectHideFlags: 0
@@ -1701,11 +1755,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10
+      value: -8
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: m_LocalRotation.w
