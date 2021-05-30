@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 public class NextScene : MonoBehaviour
 {
     private AsyncOperation aso;
-    // Start is called before the first frame update
+    private float time = 0.0f;
+    
     void Start()
     {
         int myIndex = SceneManager.GetActiveScene().buildIndex;
@@ -15,13 +16,23 @@ public class NextScene : MonoBehaviour
             aso = SceneManager.LoadSceneAsync(myIndex + 1);
             aso.allowSceneActivation = false;
         }
+        switch (myIndex)
+        {
+            case 0:
+                time = 120.0f;
+                break;
+            default:
+                time = -1.0f;
+                break;
+        }
+        Debug.Log(time);
+        StartCoroutine(StalledLevel());
     }
 
-    private void Update()
+    IEnumerator StalledLevel()
     {
-        if (Input.GetKeyDown(KeyCode.F) || OVRInput.GetDown(OVRInput.Button.One))
-            aso.allowSceneActivation = true;
-        if (OVRInput.GetDown(OVRInput.Button.Two))
-            Application.Quit();
+        if (time <= 0.0f) { yield break; }
+        yield return new WaitForSeconds(time);
+        aso.allowSceneActivation = true;
     }
 }
