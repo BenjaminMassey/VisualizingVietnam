@@ -22,17 +22,17 @@ public class SpawnOverTime : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine("SpawnLoop");
         has_rb = baseObject.GetComponent<Rigidbody>() != null;
         has_bc = baseObject.GetComponent<BoxCollider>() != null;
         has_smr = baseObject.GetComponent<SkinnedMeshRenderer>() != null;
+        StartCoroutine("SpawnLoop");
     }
 
     private IEnumerator SpawnLoop()
     {
-        if (true) { baseObject.GetComponent<Rigidbody>().useGravity = false; }
-        if (true) { baseObject.GetComponent<BoxCollider>().enabled = false; }
-        if (true) { baseObject.GetComponent<SkinnedMeshRenderer>().enabled = false; }
+        if (has_rb) { baseObject.GetComponent<Rigidbody>().useGravity = false; }
+        if (has_bc) { baseObject.GetComponent<BoxCollider>().enabled = false; }
+        if (has_smr) { baseObject.GetComponent<SkinnedMeshRenderer>().enabled = false; }
         else { baseObject.GetComponent<MeshRenderer>().enabled = false;  }
 
         yield return new WaitForSeconds(wait_time);
@@ -48,10 +48,11 @@ public class SpawnOverTime : MonoBehaviour
             temp_v.y = temp_v.y + Random.Range(-bounds.y, bounds.y);
             temp_v.z = temp_v.z + Random.Range(-bounds.z, bounds.z);
             temp_go.transform.position = temp_v;
-            temp_go.GetComponent<Rigidbody>().useGravity = true;
-            temp_go.GetComponent<BoxCollider>().enabled = true;
-            //temp_go.GetComponent<MeshRenderer>().enabled = true;
-            temp_go.GetComponent<SkinnedMeshRenderer>().enabled = true;
+            if (has_rb) { temp_go.GetComponent<Rigidbody>().useGravity = true; }
+            if (has_bc) { temp_go.GetComponent<BoxCollider>().enabled = true; }
+            if (has_smr) { temp_go.GetComponent<SkinnedMeshRenderer>().enabled = true; }
+            else { temp_go.GetComponent<MeshRenderer>().enabled = true; }
+            
             temp_go.transform.parent = gameObject.transform;
             yield return new WaitForSeconds(between_time);
         }
