@@ -18,6 +18,7 @@ public class SpawnOverTime : MonoBehaviour
     private bool has_rb;
     private bool has_bc;
     private bool has_smr;
+    private bool is_bomber;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +26,7 @@ public class SpawnOverTime : MonoBehaviour
         has_rb = baseObject.GetComponent<Rigidbody>() != null;
         has_bc = baseObject.GetComponent<BoxCollider>() != null;
         has_smr = baseObject.GetComponent<SkinnedMeshRenderer>() != null;
+        is_bomber = baseObject.GetComponent<Bomber>() != null;
         StartCoroutine("SpawnLoop");
     }
 
@@ -33,7 +35,20 @@ public class SpawnOverTime : MonoBehaviour
         if (has_rb) { baseObject.GetComponent<Rigidbody>().useGravity = false; }
         if (has_bc) { baseObject.GetComponent<BoxCollider>().enabled = false; }
         if (has_smr) { baseObject.GetComponent<SkinnedMeshRenderer>().enabled = false; }
-        else { baseObject.GetComponent<MeshRenderer>().enabled = false;  }
+        else
+        {
+            int cc = baseObject.transform.childCount;
+            Transform t = baseObject.transform;
+            for (int i = 0; i < cc; i++)
+            {
+                t.GetChild(i).GetComponent<MeshRenderer>().enabled = false;
+            }
+        }
+        if (is_bomber)
+        {
+            baseObject.GetComponent<Bomber>().enabled = false;
+            baseObject.GetComponent<Flight>().enabled = false;
+        }
 
         yield return new WaitForSeconds(wait_time);
 
@@ -51,9 +66,23 @@ public class SpawnOverTime : MonoBehaviour
             if (has_rb) { temp_go.GetComponent<Rigidbody>().useGravity = true; }
             if (has_bc) { temp_go.GetComponent<BoxCollider>().enabled = true; }
             if (has_smr) { temp_go.GetComponent<SkinnedMeshRenderer>().enabled = true; }
-            else { temp_go.GetComponent<MeshRenderer>().enabled = true; }
-            
+            else
+            {
+                int cc = baseObject.transform.childCount;
+                Transform t = baseObject.transform;
+                for (int j = 0; j < cc; j++)
+                {
+                    t.GetChild(j).GetComponent<MeshRenderer>().enabled = true;
+                }
+            }
+            if (is_bomber)
+            {
+                baseObject.GetComponent<Bomber>().enabled = true;
+                baseObject.GetComponent<Flight>().enabled = true;
+            }
+
             temp_go.transform.parent = gameObject.transform;
+            baseObject = temp_go;
             yield return new WaitForSeconds(between_time);
         }
     }
