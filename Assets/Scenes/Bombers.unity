@@ -241,10 +241,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseObject: {fileID: 9025489514276206712}
-  number: 180
+  number: 67
   bounds: {x: 0, y: 0, z: 0}
   wait_time: 0
-  between_time: 1
+  between_time: 3
 --- !u!1 &719969262
 GameObject:
   m_ObjectHideFlags: 0
@@ -553,7 +553,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8801635088aa9074398d4cea87505ecd, type: 2}
+  - {fileID: 2100000, guid: 4e6a7799210a7aa4da426e1613797334, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1175,7 +1175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destination: {x: 100, y: 60, z: 100}
-  time: 1
+  time: 3
 --- !u!114 &9025489514276206714
 MonoBehaviour:
   m_ObjectHideFlags: 0

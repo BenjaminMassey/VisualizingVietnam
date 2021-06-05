@@ -16,11 +16,15 @@ public class Bomber : MonoBehaviour
     // Update is called once per frame
     IEnumerator Dropper()
     {
-        while (true)
+        yield return new WaitForSeconds(Random.Range(0.0f, 1.4f));
+        
+        float total = 3.0f;
+        int num = 3;
+        for (int _ = 0; _ < num; _++)
         {
-            yield return new WaitForSeconds(Random.Range(0.3f, 0.7f));
             GameObject b = Instantiate(bomb);
             b.transform.position = transform.position;
+            yield return new WaitForSeconds((total / (num - 1)));
         }
     }
 }
