@@ -390,11 +390,280 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
       propertyPath: times.Array.size
-      value: 0
+      value: 31
       objectReference: {fileID: 0}
     - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
       propertyPath: captions.Array.size
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: times.Array.data[0]
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: times.Array.data[1]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: times.Array.data[2]
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: times.Array.data[3]
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: times.Array.data[4]
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: times.Array.data[5]
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: times.Array.data[6]
+      value: 38
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: times.Array.data[7]
+      value: 44
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: times.Array.data[8]
+      value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: times.Array.data[9]
+      value: 54
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: times.Array.data[10]
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: times.Array.data[11]
+      value: 68
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: times.Array.data[12]
+      value: 77
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: times.Array.data[13]
+      value: 81
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: times.Array.data[14]
+      value: 88
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: times.Array.data[15]
+      value: 94
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: times.Array.data[16]
+      value: 98
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: times.Array.data[17]
+      value: 107
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: times.Array.data[18]
+      value: 113
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: times.Array.data[19]
+      value: 121
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: times.Array.data[20]
+      value: 123
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: times.Array.data[21]
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: times.Array.data[22]
+      value: 136
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: times.Array.data[23]
+      value: 142
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: times.Array.data[24]
+      value: 149
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: times.Array.data[25]
+      value: 152
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: times.Array.data[26]
+      value: 156
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: times.Array.data[27]
+      value: 164
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: times.Array.data[28]
+      value: 167
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: times.Array.data[29]
+      value: 172
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: times.Array.data[30]
+      value: 176
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: captions.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: captions.Array.data[1]
+      value: Another illuminating statistic from the Vietnam War is the sheer amount
+        of bombs that the United States dropped upon the Vietnamese people.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: captions.Array.data[2]
+      value: This number is estimated to be around 5 million tons, which immediately
+        is far too large and abstract to fully grasp.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: captions.Array.data[3]
+      value: With the standard bomb size of 500 pounds used in the typical B52 bomber,
+        this brings our number of bombs dropped to 20 million.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: captions.Array.data[4]
+      value: Again, we are brought to a number that is fairly difficult to comprehend,
+        but at the bare minimum we have moved from weight to amount.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: captions.Array.data[5]
+      value: Said amount brings us to the bombing visualization.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: captions.Array.data[6]
+      value: In the scene in front of you, there are 67 bombers which will drop three
+        bombs each.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: captions.Array.data[7]
+      value: The total count of around 200 bombs means that each bomb represents
+        one hundred thousand real life bombs.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: captions.Array.data[8]
+      value: Let us begin
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: captions.Array.data[9]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: captions.Array.data[10]
+      value: It would be hard to overstate how devastating these bombs were, not
+        only upon the country of Vietnam, but also on the region in general.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: captions.Array.data[11]
+      value: 'An infamous US bombing campaign was along the Ho Chi Minh trail: a
+        trade route through Cambodia that Vietnamese Communists used.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: captions.Array.data[12]
+      value: "This specific bombing campaign \u2014 along with an influx of Vietnamese
+        refugees \u2014"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: captions.Array.data[13]
+      value: completely disrupted Cambodia in such a way that allowed the rise of
+        the notorious Khmer Rouge.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: captions.Array.data[14]
+      value: This regime was brutal to the Cambodian people, and more specifically
+        killed upwards of one million of its own people
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: captions.Array.data[15]
+      value: 'in the name of cultural revolution: labeled today as a genocide.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: captions.Array.data[16]
+      value: Even ignoring the fact that the Khmer Rouge received United States backing
+        based on the idea of them being a counterweight towards Vietnamese Communism,
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: captions.Array.data[17]
+      value: the simply absurd amount of bombing during the Vietnam conflict ended
+        up shaping the region as a whole.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: captions.Array.data[18]
+      value: For a conflict that many considered to be none of our business, the
+        idea is only made more disgusting by how much Western power dominated the
+        region.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: captions.Array.data[19]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: captions.Array.data[20]
+      value: Strategic fire bombing on densely forested areas meant highly effective
+        destruction,
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: captions.Array.data[21]
+      value: and the lack of ability to retaliate in any way from such an impoverished
+        nation makes this strategy all the less justified.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: captions.Array.data[22]
+      value: All of this being said, it makes it all the more impressive that the
+        United States failed in its goal
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: captions.Array.data[23]
+      value: of taking over Vietnam with capitalist powers, and that Vietnam remains
+        a socialist nation to this day.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: captions.Array.data[24]
+      value: With their impressive guerilla tactics and passion for their country,
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: captions.Array.data[25]
+      value: they successfully held out against the most powerful and brutal nation
+        in the world.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: captions.Array.data[26]
+      value: 'This failure only makes all of the destruction that much more devastating:
+        so many lives lost for nothing.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: captions.Array.data[27]
+      value: 'This is the way we must remember the Vietnam War:'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: captions.Array.data[28]
+      value: a disgustingly one-sided conflict, staged for all of the wrong reasons,
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: captions.Array.data[29]
+      value: without even a quote / un-quote success to show for it.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127889790395608684, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
+      propertyPath: captions.Array.data[30]
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4127889790980585911, guid: bdd4efede79edb845817d2f11e7d907a, type: 3}
       propertyPath: m_Name
