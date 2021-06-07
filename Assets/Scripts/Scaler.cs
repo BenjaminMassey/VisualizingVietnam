@@ -35,7 +35,7 @@ public class Scaler : MonoBehaviour
         numB = numB_obj.GetComponent<TextMesh>();
         stats = new (int num, string label)[]
             {
-                (56000, "US Soldier\nDeath Count"),
+                (58000, "US Soldier\nDeath Count"),
                 (1210000, "Vietnam Soldier\nDeath Count"),
                 (415000, "Vietnam Civilian\nDeath Count"),
                 (130000, "Vietnam Veterans\nAgainst the War\nNYC Demonstration"),
@@ -43,12 +43,21 @@ public class Scaler : MonoBehaviour
                 (504, "My Lai Massacre\nDeath Count"),
                 (1500000, "Khmer Rouge's Cambodian\nGenocide Death Count"),
                 (1500000, "Number of Refugees\n1975-1985"),
+                (360000, "Number of Refugees\nFrom SE Asia to\nUnited States 1975-1985"),
                 (2000000, "Total Number\nof US men\nwho Served in Vietnam"),
                 (3000000, "Ho Chi Minh Trail\nAmount of Bombs\nDropped (Tons)"),
-                (5000000, "Number of Bombs\nDropped on Vietnam\n(Tons)"),
+                (5000000, "Number of Bombs\nDropped on Vietnam\n(Tons) by the US"),
                 (1000000, "Moritorium Demostration\nin November of 1969"),
                 (206000, "Additional US Troops\nRequested but Refused\nfor Tet Offensive"),
-                (543400, "Highest Concurrent\nCount of US Troops")
+                (543400, "Highest Concurrent\nCount of US Troops"),
+                (2093, "Unacounted for American\nServicemen in the Vietnam War"),
+                (224, "Official US Troop MIA\nCount for Vietnam"),
+                (405349, "World War II US\nSoldier Death Count"),
+                (766, "Americans Held In POW\nCamps in Vietnam"),
+                (58000, "Vietnamese Losses During\nthe Tet Offensive"),
+                (3895, "American Losses During\nthe Tet Offensive"),
+                (100000, "Easter Offensive Vientamese\nCasualities (North Only)"),
+                (52000, "Operation ROLLING THUNDER\nVietnamese Casualities (North Only)")
             };
         indexA = 0;
         indexB = 1;
@@ -57,25 +66,25 @@ public class Scaler : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (Input.GetKeyDown(KeyCode.UpArrow) || OVRInput.GetDown(OVRInput.Button.SecondaryThumbstickRight))
         {
             indexA++;
             if (indexA >= stats.Length) { indexA = 0; }
             changed = true;
         }
-        if (Input.GetKeyDown(KeyCode.DownArrow))
+        if (Input.GetKeyDown(KeyCode.DownArrow) || OVRInput.GetDown(OVRInput.Button.SecondaryThumbstickLeft))
         {
             indexA--;
             if (indexA < 0) { indexA = stats.Length - 1; }
             changed = true;
         }
-        if (Input.GetKeyDown(KeyCode.RightArrow))
+        if (Input.GetKeyDown(KeyCode.RightArrow) || OVRInput.GetDown(OVRInput.Button.PrimaryThumbstickRight))
         {
             indexB++;
             if (indexB >= stats.Length) { indexB = 0; }
             changed = true;
         }
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Input.GetKeyDown(KeyCode.LeftArrow) || OVRInput.GetDown(OVRInput.Button.PrimaryThumbstickLeft))
         {
             indexB--;
             if (indexB < 0) { indexB = stats.Length - 1; }

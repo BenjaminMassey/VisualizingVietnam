@@ -24,6 +24,9 @@ public class NextScene : MonoBehaviour
             case 1:
                 time = 280.0f;
                 break;
+            case 2:
+                time = 265.0f;
+                break;
             default:
                 time = -1.0f;
                 break;
