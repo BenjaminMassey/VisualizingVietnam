@@ -11,6 +11,9 @@ using the Unity Engine and C# scripting.
 
 ## Links
 
+Here is the link to a video demonstration of the VR experience:
+https://www.youtube.com/watch?v=jvxa_PwdOLE
+
 Here is the link to the web version of the game:
 https://simmer.io/@BeanSSBM/visualizing-vietnam
 
